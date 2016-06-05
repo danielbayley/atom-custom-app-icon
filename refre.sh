@@ -1,6 +1,6 @@
 #! /usr/bin/env zsh -f
 
-cd ~/Downloads/test/icns #$NODE_PATH:h:h
+cd $NODE_PATH:h:h
 
 if (($#))
 then [ -d $1 ] && set -- $1/{atom,file}.icns
