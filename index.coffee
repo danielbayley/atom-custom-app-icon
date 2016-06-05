@@ -13,8 +13,10 @@ module.exports =
 		type: 'string'
 		default: atom.configDirPath
 
-#-------------------------------------------------------------------------------
+	subs: null
 	activate: ->
+#-------------------------------------------------------------------------------
+
 		#if @os is 'darwin'
 		icns = atom.config.get 'custom-app-icon.path'
 
@@ -25,6 +27,9 @@ module.exports =
 			#unless @pattern in atom.config.get @backup
 				#atom.config.pushAtKeyPath @backup, @pattern
 
+		# Restore original icon/s
+		@subs = atom.commands.add 'atom-workspace',
+			'custom-app-icon:restore', -> spawn "#{__dirname}/refre.sh"
+
 #-------------------------------------------------------------------------------
-	deactivate: ->
-		spawn "#{__dirname}/refre.sh"
+	deactivate: -> @subs.dispose()

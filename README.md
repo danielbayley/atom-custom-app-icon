@@ -13,7 +13,7 @@ Simply place your custom `.icns` file(s)<sup id="R1">[*](#F1)</sup> in your `ATO
 
 <a id="F1">[*](#R1)</a> You can also supply a `file.icns` which will apply to all files associated with Atom.
 
-Deactivate or remove this package to restore original icon/s.
+`Restore` the original icon/s from the command palette.
 
 Your icons will be automatically added to the list of extra backup files if the [sync-settings] package is installed.
 
