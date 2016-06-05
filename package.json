@@ -1,0 +1,29 @@
+{
+  "name": "custom-app-icon",
+  "version": "0.0.0",
+  "description": "Replace the Atom app icon with any custom .icns file.",
+  "keywords": [
+    "app",
+    "icon",
+    "icns",
+    "ui",
+    "theme"
+  ],
+  "homepage": "https://atom.io/packages/custom-app-icon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielbayley/atom-custom-app-icon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danielbayley/atom-custom-app-icon/issues"
+  },
+  "author": "Daniel Bayley <daniel.bayley@me.com> (https://github.com/danielbayley)",
+  "private": true,
+  "license": "MIT",
+  "os": [
+    "darwin"
+  ],
+  "engines": {
+    "atom": "*"
+  }
+}
