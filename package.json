@@ -1,6 +1,6 @@
 {
   "name": "custom-app-icon",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Replace the Atom app icon with any custom .icns file.",
   "keywords": [
     "app",
