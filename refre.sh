@@ -9,7 +9,7 @@ then [ -d $1 ] && set -- $1/{atom,file}.icns
   # Backup existing icon/s
   for i (*.icns $png) [ -f $i.zip ] || zip -jmq $i{.zip,}
   cp $@ . #:l
-  sips -s format png $1:t -o $png
+  sips -s format png $1:t --out $png
 else
   # Restore original icon/s
   for i (**/*.zip) unzip -oqd $i:h $i && rm $_
