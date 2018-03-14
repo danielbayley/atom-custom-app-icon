@@ -1,6 +1,6 @@
 #! /bin/zsh -f --extended-glob --glob-assign +o nomatch
 
-cd $NODE_PATH:h:h
+cd ${NODE_PATH/.app*/}.app/Contents/Resources
 
 if (($#))
 then [ -d $1 ] && set -- $1/{atom,file}.icns
