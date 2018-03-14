@@ -10,10 +10,7 @@
     "theme"
   ],
   "homepage": "https://atom.io/packages/custom-app-icon",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/danielbayley/atom-custom-app-icon.git"
-  },
+  "repository": "https://github.com/danielbayley/atom-custom-app-icon.git",
   "bugs": {
     "url": "https://github.com/danielbayley/atom-custom-app-icon/issues"
   },
